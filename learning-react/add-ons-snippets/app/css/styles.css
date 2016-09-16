@@ -1,0 +1,21 @@
+/*body {
+    color: red;
+}*/
+
+.animatedList-enter {
+  opacity: 0.01;
+}
+
+.animatedList-enter.animatedList-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.animatedList-leave {
+  opacity: 1;
+}
+
+.animatedList-leave.animatedList-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
