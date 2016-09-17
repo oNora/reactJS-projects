@@ -2,7 +2,9 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var Box = require('./components/div');
+var Scrollmagic = require('./components/scrollmagic');
 
+require('./css/style.css');
 
 var HelloWorld = React.createClass({
     render: function() {
@@ -14,6 +16,8 @@ var HelloWorld = React.createClass({
                 <br/>
             </p>
             <Box />
+            <br/>
+            <Scrollmagic/>
         </div>
 
         );
