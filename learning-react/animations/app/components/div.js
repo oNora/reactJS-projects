@@ -1,6 +1,6 @@
 var TweenMax = require( 'gsap');
+var Power4 = require( 'gsap');
 
-// import GSAP from 'gsap-react-plugin';
 var React = require('react');
 
 var divStyle = {
@@ -9,10 +9,15 @@ var divStyle = {
     background: 'red'
 }
 
+var ease = Power4.easeInOut;
+
 var Box = React.createClass({
     componentDidMount: function(){
         var note= this.getDOMNode();
-        TweenMax.to(note, 5, {x:299});
+        TweenMax.to(note, 5, {
+            x:299,
+            ease: ease,
+        });
     },
     render: function(){
         return (

@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -9,11 +10,19 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
   entry: {
     app: './app/index.js',
-    vendor: ['gsap', 'scrollmagic']
+    vendor: ['jquery', 'gsap', 'scrollmagic']
   },
   output: {
     path: __dirname + '/dist',
     filename: "index_bundle.js"
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+    root: path.resolve(path.join(__dirname, 'src')),
+    alias: {
+      scrollmagic: path.resolve(path.join(__dirname, 'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic')),
+      addIndicators: path.resolve(path.join(__dirname, 'node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'))
+    }
   },
   module: {
     loaders: [
