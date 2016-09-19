@@ -1,5 +1,6 @@
-var scrollmagic = require( 'scrollmagic');
-var addIndicators = require( 'addIndicators');
+var scrollmagic = require( 'scrollmagic/ScrollMagic');
+
+require('scrollmagic/plugins/debug.addIndicators.js');
 
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -21,7 +22,7 @@ var Scrollmagic = React.createClass({
                     triggerElement: sections[key]
                 })
                 .setPin(sections[key])
-                // .addIndicators() // add indicators (requires plugin)
+                .addIndicators() // add indicators (requires plugin)
                 .addTo(this.controller);
         }
     },

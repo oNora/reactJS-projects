@@ -9,8 +9,8 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: {
-    app: './app/index.js',
-    vendor: ['jquery', 'gsap', 'scrollmagic']
+    app: './app/index.js'
+    // vendor: ['jquery', 'gsap', 'scrollmagic']
   },
   output: {
     path: __dirname + '/dist',
@@ -20,8 +20,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx'],
     root: path.resolve(path.join(__dirname, 'src')),
     alias: {
-      scrollmagic: path.resolve(path.join(__dirname, 'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic')),
-      addIndicators: path.resolve(path.join(__dirname, 'node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'))
+      scrollmagic: path.resolve(path.join(__dirname, 'node_modules/scrollmagic/scrollmagic/uncompressed/'))
     }
   },
   module: {
