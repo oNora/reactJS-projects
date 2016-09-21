@@ -1,1 +1,2 @@
-@import './components/style.css';
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css';
+@import './components/scrollmagicTest.css';
