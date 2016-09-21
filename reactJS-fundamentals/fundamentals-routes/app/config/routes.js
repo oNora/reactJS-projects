@@ -9,7 +9,7 @@ var Home = require("../components/Home");
 var InnerPage = require("../components/InnerPage");
 
 var routes = (
-    <Router history={hashHistory}>
+    <Router history={withExampleBasename(browserHistory, __dirname)}>
         <Route path='/' component={Main}>
             <IndexRoute path='/home' component={Home} />
             <Route path='/page' component={InnerPage}> </Route>
