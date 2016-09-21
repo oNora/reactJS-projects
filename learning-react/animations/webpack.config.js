@@ -19,7 +19,8 @@ var common = {
   entry: {
     app: PATHS.app,
     style: PATHS.style,
-    vendor: PATHS.vendors
+    // vendor: Object.keys(pkg.dependencies)
+    // vendor: PATHS.vendors
   },
   output: {
     path: PATHS.build,
@@ -27,6 +28,9 @@ var common = {
   },
   resolve: {
     extensions: ['', '.js'],
+    alias: {
+      scrollmagic: path.join(__dirname, 'node_modules/scrollmagic/scrollmagic/uncompressed/').toLowerCase()
+    }
   },
   module: {
     loaders: [
@@ -59,10 +63,10 @@ switch(process.env.npm_lifecycle_event) {
             'process.env.NODE_ENV',
             'production'
         ),
-        parts.extractBundle({
-          name: 'vendor',
-          entries: Object.keys(pkg.dependencies)
-        }),
+        // parts.extractBundle({
+        //   name: 'vendor',
+        //   entries: Object.keys(pkg.dependencies)
+        // }),
         parts.minify(),
         // parts.setupCSS(PATHS.app)
         // parts.extractCSS(PATHS.app)

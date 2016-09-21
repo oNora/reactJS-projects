@@ -1,7 +1,7 @@
 require('react');
 require( 'react-dom');
 require( 'jquery');
-// require( 'gsap');
+require( 'gsap');
 require( 'scrollmagic');
 // require( 'scrollmagic/ScrollMagic');
-// require( 'scrollmagic/plugins/debug.addIndicators.js');
+// require( 'scrollmyagic/plugins/debug.addIndicators.js');

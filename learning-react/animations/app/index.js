@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var Box = require('./components/tweenMaxDiv');
-// var Scrollmagic = require('./components/scrollmagicTest');
+var Scrollmagic = require('./components/scrollmagicTest');
 
 
 var HelloWorld = React.createClass({
@@ -16,11 +16,11 @@ var HelloWorld = React.createClass({
             </p>
             <Box />
             <br/>
+            <Scrollmagic/>
         </div>
         );
     }
 });
-            // <Scrollmagic/>
 
 
 ReactDOM.render(
