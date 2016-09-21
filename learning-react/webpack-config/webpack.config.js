@@ -28,8 +28,8 @@ const common = {
   // convenient with more complex configurations.
   entry: {
     app: PATHS.app,
-    style: PATHS.style
-    // vendor: Object.keys(pkg.dependencies)
+    style: PATHS.style,
+    vendor: Object.keys(pkg.dependencies)
   },
   output: {
     path: PATHS.build,
