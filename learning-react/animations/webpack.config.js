@@ -1,37 +1,83 @@
-var webpack = require('webpack');
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: __dirname + '/app/index.html',
-  filename: 'index.html',
-  inject: 'body'
-});
+const parts = require('./config/parts');
+var pkg = require('./package.json');
 
-module.exports = {
+// var webpack = require('webpack');
+var path = require('path');
+
+var merge = require('webpack-merge');
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var validate = require('webpack-validator');
+
+var PATHS = {
+  app:  path.join(__dirname, 'app').replace(/^([A-Z]:)/, function(v) { return v.toLowerCase(); } ),
+  style: path.join(__dirname, 'app', 'main.css').replace(/^([A-Z]:)/, function(v) { return v.toLowerCase(); } ),
+  build: path.join(__dirname, 'dist').replace(/^([A-Z]:)/, function(v) { return v.toLowerCase(); } ),
+  vendors: path.join(__dirname, 'app', 'vendor.js').replace(/^([A-Z]:)/, function(v) { return v.toLowerCase(); } )
+};
+
+var common = {
   entry: {
-    app: './app/index.js'
-    // vendor: ['jquery', 'gsap', 'scrollmagic']
+    app: PATHS.app,
+    style: PATHS.style,
+    vendor: PATHS.vendors
   },
   output: {
-    path: __dirname + '/dist',
-    filename: "index_bundle.js"
+    path: PATHS.build,
+    filename: "[name].[chunkhash].js"
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
-    root: path.resolve(path.join(__dirname, 'src')),
-    alias: {
-      scrollmagic: path.resolve(path.join(__dirname, 'node_modules/scrollmagic/scrollmagic/uncompressed/'))
-    }
+    extensions: ['', '.js'],
   },
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
-      { test: /\.css$/, loader: "style-loader!css-loader" }
+      // { test: /\.css$/, loader: "style-loader!css-loader" }
     ]
   },
-  
   plugins: [
-    HTMLWebpackPluginConfig,
-     new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
+      new HtmlWebpackPlugin({
+          template: require('html-webpack-template'),
+          title: 'webpack-config',
+          appMountId: 'example',
+          inject: false
+      }),
     ]
 };
+
+var config;
+
+// Detect how npm is run and branch based on that
+switch(process.env.npm_lifecycle_event) {
+  case 'build':
+    config = merge(
+        common,
+        {
+            devtool: 'source-map'
+        },
+        parts.clean(PATHS.build),
+        parts.setFreeVariable(
+            'process.env.NODE_ENV',
+            'production'
+        ),
+        parts.extractBundle({
+          name: 'vendor',
+          entries: Object.keys(pkg.dependencies)
+        }),
+        parts.minify(),
+        // parts.setupCSS(PATHS.app)
+        // parts.extractCSS(PATHS.app)
+        parts.extractCSS(PATHS.style)
+    );
+    break;
+  default:
+    config = merge(
+      common,
+      {
+        devtool: 'source-map'
+      },
+      // parts.setupCSS(PATHS.app)
+      parts.extractCSS(PATHS.style)
+    );
+}
+
+module.exports = validate(config);
