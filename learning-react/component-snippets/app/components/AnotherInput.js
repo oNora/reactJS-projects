@@ -10,7 +10,7 @@ var AnotherInput = React.createClass({
   render: function() {
     return (
       <div>
-        <input type="text" ref="myTextInput" /
+        <input type="text" ref="myTextInput" />
         <input
           type="button"
           value="Focus the text input"
