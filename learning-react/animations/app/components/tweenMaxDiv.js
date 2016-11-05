@@ -22,7 +22,7 @@ var Box = React.createClass({
     },
     render: function(){
         return (
-            <div className={"box"} style={divStyle}></div>
+            <div className={"box"} style={divStyle}>tweenMax Div</div>
         )
     }
 });

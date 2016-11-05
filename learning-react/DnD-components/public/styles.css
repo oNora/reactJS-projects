@@ -1,6 +1,17 @@
 body {
   font: 16px/1 sans-serif;
 }
+
+.gitHubBtn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color:#bfbfbf;
+}
+.gitHubBtn:hover, .gitHubBtn:active{
+  color: #9b9b9b;
+}
+
 #root {
   height: 100%;
 }

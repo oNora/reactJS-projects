@@ -28,3 +28,14 @@ menu {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+.gitHubBtn{
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  color:#ccc;
+  transform: rotate(-45deg);
+}
+.gitHubBtn:hover, .gitHubBtn:active{
+  color: #bcbcbc;
+}

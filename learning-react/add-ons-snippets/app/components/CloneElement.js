@@ -5,7 +5,7 @@ var Child = React.createClass({
   render: function() {
       console.log('this.props doSomething: ', this.props.doSomething
 );
-        return (<div onClick={() => this.props.doSomething(this.props.value)}>Click Me</div>);
+        return (<div onClick={() => this.props.doSomething(this.props.value)}>Click Me and look at the console in browser.</div>);
   }
 });
 

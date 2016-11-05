@@ -98,7 +98,7 @@ section#titlechart #description ol {
 	list-style-position: outside;
 }
 #example-wrapper section#titlechart #description:after {
-	content: "â†§";
+	content: "⇓";
 	font-size: 40px;
 	display: block;
 }

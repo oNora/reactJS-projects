@@ -1,3 +1,13 @@
+.gitHubBtn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color:#7d16cc;
+}
+.gitHubBtn:hover, .gitHubBtn:active{
+  color: #6b11af;
+}
+
 input {
   padding: 5px;
   width: 120px;
