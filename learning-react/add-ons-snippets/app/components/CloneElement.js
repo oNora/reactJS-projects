@@ -3,9 +3,8 @@ var Clone = require('react-clone').default
 
 var Child = React.createClass({
   render: function() {
-      console.log('this.props doSomething: ', this.props.doSomething
-);
-        return (<div onClick={() => this.props.doSomething(this.props.value)}>Click Me and look at the console in browser.</div>);
+      console.log('this.props doSomething: ', this.props.doSomething);
+        return (<div onClick={ () => this.props.doSomething(this.props.value) }>Click Me and look at the console in browser.</div>);
   }
 });
 
