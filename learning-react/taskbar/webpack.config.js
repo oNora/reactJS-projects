@@ -48,7 +48,7 @@ const common = {
   plugins: [
     new HtmlWebpackPlugin({   // automatically generate of a index.html
         template: require('html-webpack-template'),
-        title: 'webpack-config',
+        title: 'demo with ability of adding new element with editable field',
         appMountId: 'app',
         inject: false
     })

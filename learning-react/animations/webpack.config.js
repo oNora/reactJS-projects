@@ -41,7 +41,7 @@ var common = {
   plugins: [
       new HtmlWebpackPlugin({
           template: require('html-webpack-template'),
-          title: 'webpack-config',
+          title: 'demo using third party library - TweenMax and ScrollMagic',
           appMountId: 'example',
           inject: false
       }),
