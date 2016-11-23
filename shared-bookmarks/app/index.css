@@ -1,0 +1,14 @@
+body {
+  background: cornsilk;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+tr:nth-child(odd) {
+    background: #efefef;
+}
+tr:nth-child(even) {
+    background: #fff;
+}
