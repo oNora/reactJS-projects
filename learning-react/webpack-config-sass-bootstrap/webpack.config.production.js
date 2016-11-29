@@ -58,6 +58,11 @@ var config = {
                 keep_fnames: true
             }
         }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify('production')
+            }
+        }),
         new ExtractTextPlugin("style-[chunkhash].css"),
         new CleanWebpackPlugin([PATHS.build], {
             // Without `root` CleanWebpackPlugin won't point to our

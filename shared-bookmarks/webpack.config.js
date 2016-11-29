@@ -55,6 +55,7 @@ var common = {
       appMountId: 'root',
       inject: false
     }),
+    new webpack.optimize.OccurenceOrderPlugin(),
   ]
 }
 
@@ -65,6 +66,7 @@ switch (process.env.npm_lifecycle_event) {
   case 'build':
     config = merge(
       common,
+      parts.setEnvironment(),
       {
         devtool: 'source-map'
       },
