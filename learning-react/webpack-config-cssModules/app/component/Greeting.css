@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'love_ya_like_a_sisterregular';
+    src: url('../../fonts/LoveYaLikeASister.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.root {
+    background-color: #eee;
+    padding: 10px;
+    border: 3px solid #ccc;
+}
+body{
+    background: red;
+}
+.img{
+    width: 180px;
+    height: 180px;
+    background: url('../../images/apple.png')
+}
+
+.setFont{
+    color: #ea50a4;
+    font-family: 'love_ya_like_a_sisterregular';
+}
