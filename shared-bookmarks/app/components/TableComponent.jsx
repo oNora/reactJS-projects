@@ -32,8 +32,8 @@ class ListComponent extends Component {
         }
 
         return (
-            <div>
-                <table >
+            <div className="panel panel-default">
+                <table className="table table-striped">
                     <tbody>
                         {generateTableRows(this.props.bookmarks, this.props.onEdit, this.props.onDelete)}
                     </tbody>

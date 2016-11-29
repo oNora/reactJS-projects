@@ -8,6 +8,7 @@ import BookmarkActionsCreator from '../actions/BookmarkActionsCreator'
 import Table from './TableComponent';
 import EditComponent from './EditComponent.jsx';
 
+import 'bootstrap/dist/css/bootstrap.css';
 
 class AppContainer extends Component{
     constructor() {
@@ -63,7 +64,7 @@ class AppContainer extends Component{
 
     render() {
         return (
-        <div>
+        <div className='container'>
            <EditComponent 
                 selectedBookmark={this.props.selectedBookmark} 
                 handleSubmit={this.handleSubmit}
