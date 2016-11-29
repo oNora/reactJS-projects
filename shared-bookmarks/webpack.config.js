@@ -10,78 +10,76 @@ const pkg = require('./package.json');
 
 
 var PATHS = {
-  app:  path.join(__dirname, 'app'),
-  style: path.join(__dirname, 'app', 'main.css'),
-  build: path.join(__dirname, 'public'),
+  app: path.join(__dirname, 'app'),
+  // style: path.join(__dirname, 'app', 'main.css'),
+  build: path.join(__dirname, 'build'),
 };
 
 /*
  * Default webpack configuration for development
  */
 var common = {
-  // devtool: 'eval-source-map',
-  devtool: 'source-map',
   entry: {
-      app: PATHS.app,
-      style: PATHS.style
-      // vendor: ['react']
+    app: PATHS.app,
   },
   output: {
-    path: __dirname + "/public",
+    path: PATHS.build,
     filename: "[name].[chunkhash].js"
   },
   module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015','react']
-        },
-        
+    loaders: [{
+      test: /\.jsx?$/,
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: ['es2015', 'react']
       },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css'),
-        include: PATHS.style
-      },
-      // { test: /\.css$/, loader: "style-loader!css-loader", exclude: /node_modules/ },
-      // {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/, loader: 'file', exclude: /node_modules/},
-      // {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff" },
-      // {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/octet-stream" },
-      // {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
-      // {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml" }
-    ]
+
+    }, {
+      test: /\.(jpg|png|gif|svg)$/,
+      loader: 'file?name=images/[name]-[hash:6].[ext]',
+      // include: PATHS.images
+    }, {
+      test: /\.(woff|woff2|eot|ttf)$/,
+      loader: 'file?name=fonts/[name].[ext]',
+      // include: PATHS.fonts
+    }]
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.css']
   },
   plugins: [
-      new HtmlWebpackPlugin({
-          template: require('html-webpack-template'),
-          title: 'shared bookmarks',
-          appMountId: 'root',
-          inject: false
-      }),
-      new ExtractTextPlugin('[name].[chunkhash].css')
-    ]
+    new HtmlWebpackPlugin({
+      template: require('html-webpack-template'),
+      title: 'shared bookmarks',
+      appMountId: 'root',
+      inject: false
+    }),
+  ]
 }
 
 var config;
 
 // Detect how npm is run and branch based on that
-switch(process.env.npm_lifecycle_event) {
+switch (process.env.npm_lifecycle_event) {
   case 'build':
     config = merge(
-        common,
-        parts.clean(PATHS.build),
-        parts.minify()
+      common,
+      {
+        devtool: 'source-map'
+      },
+      parts.clean(PATHS.build),
+      parts.extractCSS(),
+      parts.minify()
     );
     break;
   default:
     config = merge(
-      common
+      common,
+      {
+        devtool: 'eval-source-map'
+      },
+      parts.extractCSS()
     );
 }
 
