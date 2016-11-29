@@ -23,6 +23,16 @@ exports.minify = function() {
   };
 }
 
+exports.setEnvironment = function() {
+  return {
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {NODE_ENV: JSON.stringify('production')}
+      })
+    ]
+  }
+}
+
 exports.clean = function(path) {
   return {
     plugins: [

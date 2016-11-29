@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --progress",
-    "build": "set NODE_ENV=production & webpack --config ./webpack.config.production.js --progress"
+    "build": "node_modules/.bin/webpack --config ./webpack.config.production.js --progress"
   },
   "author": "",
   "license": "ISC",
