@@ -21,3 +21,7 @@ React basics snippets created while I was reading books and posts and watching t
 
 1. `fundamentals` - creating components ([Demo](http://onora.github.io/reactJS-projects/reactJS-fundamentals/fundamentals/dist/))
 2. `github-battel` - full example with routing, component, separating business logic from presentation logic, best practice and etc. ([Demo](http://onora.github.io/reactJS-projects/reactJS-fundamentals/github-battel/dist/))
+
+
+###III `shared-bookmarks`
+[Demo](http://onora.github.io/reactJS-projects/shared-bookmarks/build/) with React and Redux
