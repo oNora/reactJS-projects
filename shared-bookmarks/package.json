@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --port 8000 --inline --progress",
-    "build": "node_modules/.bin/webpack -p --progress --colors"
+    "build": "node_modules/.bin/webpack -p --progress --colors",
+    "//test": "mocha --reporter progress ./testSetup.js app/**/*.spec.js app/components/**/*.spec.js",
+    "test": "mocha --reporter spec ./testSetup.js app/**/*.spec.js app/components/**/*.spec.js",
+    "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +20,15 @@
     "babel-preset-react": "^6.11.1",
     "clean-webpack-plugin": "^0.1.14",
     "css-loader": "^0.25.0",
+    "enzyme": "^2.7.0",
+    "expect": "^1.20.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "html-webpack-template": "^5.2.0",
+    "jsdom": "^9.9.1",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.4.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
