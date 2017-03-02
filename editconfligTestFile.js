@@ -1,5 +1,5 @@
 const ala = 'ala bala';
 
-function newFunc(){
+function mytest(){
   console.log('log: ', ala);
 }
