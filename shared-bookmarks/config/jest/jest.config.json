@@ -7,7 +7,7 @@
     "moduleDirectories": ["node_modules", "bower_components", "shared"],
     "moduleNameMapper": {
          "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-         "^.+\\.(css|sass)$": "<rootDir>/__mocks__/styleMock.js"
+         "^.+\\.(css|sass)$": "identity-obj-proxy"
      },
     "setupFiles": [
         "<rootDir>/config/jest/jest.setup.js"
@@ -18,3 +18,4 @@
     ],
     "verbose": true
 }
+

@@ -27,6 +27,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "html-webpack-template": "^5.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^19.0.0",
     "react-addons-test-utils": "^15.4.2",
     "style-loader": "^0.13.1",
