@@ -2,9 +2,6 @@ Quick start
 ============
 
 ```bash
-# clone the repo
-$ git clone https://github.com/oNora/despark-task.git
-
 # install the dependencies with npm
 $ npm install
 
@@ -13,5 +10,4 @@ $ npm start
 
 # build the project (optional)"
 $ npm run build
-
 ```
