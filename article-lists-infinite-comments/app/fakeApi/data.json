@@ -1,0 +1,221 @@
+[
+  {
+    "title": "CERN experiment discovers five new particles",
+    "imageUrl": "http://www.stfc.ac.uk/stfc/cache/file/4821074D-0D31-4964-9318CA0AE81E0639.jpg",
+    "text": "A new group of particles which have long been hiding in plain sight have finally been discovered thanks to the incredibly sensitive LHCb experiment at CERN. LHCb, otherwise known as the Large Hadron Collider beauty experiment, is one of seven experiments collecting data at the Large Hadron Collider at CERN. UK participation in the experiment is funded by STFC.",
+    "comments": [
+      {
+        "author": "grabcocque",
+        "text": "I have to admit, I rather admire their putting a brave face on things, with their mildly-too-insistent claim that the LHC is vital for finding new physics despite the increasing likelihood it's not going to find any. In that sense the LHC is a political failure, because it has failed at its primary political job, which is to make the argument for an even bigger collider."
+      },
+      {
+        "text": "I assume these particles were already predicted as part of the Standard Model?",
+        "author": "teddythetwig",
+        "replies": [
+          {
+            "author": "brutuscat",
+            "text": "Professor Tim Gershon, Professor of Physics at University of Warwick and UK spokesperson for the LHCb experiment: "
+          },
+          {
+            "author": "gpderetta",
+            "text": "yes, and note that these are not fundamental particles (like the Higgs was for example), but composite particles of yet another combination of the fundamental quarks. The SM predicts the existence of hundreds (thousands?) of these.",
+            "replies": [
+              {
+                "author": "inlineint",
+                "text": "Actually it is even a one new particle (Omega_c baryon), but they observed five different excited energy states of it (like observing different excited states of a Hydrogen atom), so called resonances [1]. But the discovery is still exciting because it should have been really hard to find something that we don't really know how looks like in such large amount of noise."
+              },
+              {
+                "author": "binarymax",
+                "text": "Because a prediction is just an assumption (theory), and it can become a house of cards when basing future science on that assumption. Observation is proof, so future science can use that proof without worry."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "author": "guitarbill",
+        "text": "AFAIK, the experimentally determined rest masses of these excited states/particles (same thing, different was of looking at it) agree with the calculated ones well. So yes, they were predicted. No surprises sadly; of course it's still a huge achievement!"
+      },
+      {
+        "author": "brutuscat",
+        "text": "Yes, you are right, I miss read those paragraphs"
+      }
+    ]
+  },
+  {
+    "title": "Show HN: Marta – A fast and minimalistic file manager for macOS",
+    "imageUrl": "https://marta.yanex.org/data/images/dark.png",
+    "text": "File Manager for macOS. Native. Minimalistic. Fast. ",
+    "comments": [
+      {
+        "author": "mmjaa",
+        "text": "Not a fan of the Midnight Commander-style of UI, but I'll give it a try since anything has got to be better than the mess that is the Finder these days .. I still don't understand why Apple can't push Finder to be a more modern interface for the system without completely screwing it up .. so much to improve, but yet they are ignoring it in favour of sandboxes and nobody knows what a filesystem is policies that make us all dumber. One of my pet peeves with the Finder is that it still can't auto-layout the content to fit in the window - take a list view, open a folder .. and marvel at the fact that its the 21st century, but yet this list view still isn't capable of rendering itself for minimal-fit constraints. (I have to do it manually.) This is very frustrating, and I'd love to know of a solution .."
+      },
+      {
+        "author": "husted",
+        "text": "Looks like a good start. I would love to get a full replacement of TotalCommander for macOS. I've tried a few and I'm currently using Forklift 3. There's still some features that I'm missing in Forklift so I'll keep an eye on this project."
+      },
+      {
+        "author": "smarx007",
+        "text": "Wanted to try it, but no, I am not going to sign up for a super exclusive alpha that requires my email address.",
+        "replies": [
+          {
+            "author": "_joel",
+            "text": "Agreed, this complete puts me off too. Was initially interested but that evaporates with having to register."
+          },
+          {
+            "author": "yanex",
+            "text": "Well, it's your decision. By the way, if you ping me on Twitter (yanex_ru), I can send you the direct link to DMG via a DM.",
+            "replies": [
+              {
+                "author": "mmjaa",
+                "text": "Going to try to get it into Home-brew?",
+                "replies": [
+                  {
+                    "author": "yanex",
+                    "text": "Homebrew is not suited well for DMG package distribution (well, at least I don't know examples of such software). But you can install Marta just as any another macOS GUI software."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tears",
+    "imageUrl": "http://www.meltingasphalt.com/wp-content/uploads/2014/12/weeping_equation.png",
+    "text": "So humans are a peculiar species. You probably knew that. What you may not have realized — like I hadn't until recently — is just how many specific traits and behaviors are uniquely human."
+  },
+  {
+    "title": "The sad state of test frameworks",
+    "imageUrl": "https://avatars2.githubusercontent.com/u/9817956?v=3&s=400",
+    "text": "vicsydev - let's make great software again"
+  },
+  {
+    "title": "Most Electronics Being Banned on Certain US-Bound Flights",
+    "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iKX1n2O4W948/v0/1200x794.jpg",
+    "text": "Washington (AP) -- The U.S. government is temporarily barring passengers on certain flights originating in eight other countries from bringing laptops, iPads, cameras and most other electronics in carry-on luggage starting Tuesday."
+  },
+  {
+    "title": "The Document Which Used to Be Called the MIT Lockpicking Guide (1992)",
+    "imageUrl": "http://www.blurofinsanity.com/blurimages/returnhome.jpg",
+    "text": "This was \nsnagged by a new member of the Staff known as \"Cal.\" Where he found \nit doesn't matter. Just remember this is just something we found which is only \nintended for professional locksmiths, This site is only linking to this document \nfor educational purposes. Thank you."
+  },
+  {
+    "title": "A Molecular View of HIV Therapy [video]",
+    "imageUrl": "https://cdn.rcsb.org/pdb101/common/images/logo-rcsb.png",
+    "text": "PDB-101 Educational portal of RCSB PDB"
+  },
+  {
+    "title": "A hot bath has benefits similar to exercise",
+    "imageUrl": "https://cdn.theconversation.com/files/161541/width1356x668/image-20170320-9140-139upar.jpg",
+    "text": "A hot bath burns calories, helps control blood sugar and keeps your blood vessels healthy. What's not to like?"
+  },
+  {
+    "title": "Show HN: How to write a recursive descent parser",
+    "imageUrl": "http://www.craftinginterpreters.com/image/parsing-expressions/sequence.png",
+    "text": "If you see a mistake, find something unclear, or have a suggestion, please let me know. To learn when new chapters are up, join the mailing list:"
+  },
+  {
+    "title": "It's Better To Animate a Film Alone, Even If It Takes Years",
+    "imageUrl": "https://creators-images.vice.com/content-images/contentimage/no-slug/dcb63debe26ebe78aa3cbc373cb60c40.jpg?crop=1xw:0.9993654822335025xh%3Bcenter,center&resize=1200:*",
+    "text": "'Nova Seed' is sci-fi auteurship at it's best."
+  },
+  {
+    "title": "YC W17 Launch: Wifi.com.ng – Uncapped ISP for Africa",
+    "imageUrl": "http://blog.ycombinator.com/wp-content/uploads/2017/03/w17-wifi-ng.png",
+    "text": "We’re in the middle of YC’s W17 batch. As companies launch they’ll be doing a Q&A on Hacker News – aka Launch HN – in addition to being included in a roundup on the blog. Here are the companies that have recently launched: Wifi.com.ng"
+  },
+  {
+    "title": "The last patent on AC-3 (Dolby Digital) expires at midnight",
+    "imageUrl": "https://ac3freedomday.org/ddcuffs.png",
+    "text": "AC-3 is a compressed digital audio format like MP3. It made its public debut in 1992. AC-3 has become the most common format for audio in film and television. "
+  },
+  {
+    "title": "Has Li-battery genius John Goodenough done it again? Colleagues are skeptical",
+    "imageUrl": "https://qzprod.files.wordpress.com/2015/02/john_goodenough-19629-2.jpg?quality=80&strip=all&w=1600",
+    "text": "Researchers have struggled for decades to safely use powerful—but flammable—lithium metal in a battery. Now John Goodenough, the 94-year-old father of the lithium-ion battery, is claiming a novel solution as a blockbuster advance. If it proves out, the invention could allow electric cars to compete with conventional vehicles on sticker price. The improbable solution, described in a..."
+  },
+  {
+    "title": "How police found Twitter user accused of sending seizure-triggering GIF",
+    "imageUrl": "https://assets.documentcloud.org/documents/3520966/pages/FBI-Complaint-vs-John-Rivello-in-Kurt-Eichenwald-p1-normal.gif",
+    "text": "FBI complaint and affidavit in support of an arrest warrant for John Rayne Rivello, who is accused of tweeting a GIF to journalist Kurt Eichenwald with the intent of triggering a seizure. The..."
+  },
+  {
+    "title": "Bloaty McBloatface: a size profiler for binaries",
+    "imageUrl": "https://drinknewyorkseltzer.com/wp-content/uploads/2014/04/placeholder1.png",
+    "text": "I’m very excited to announce that today I’m open-sourcing atool I’ve been working on for several months at Google.It’s called Bloaty McBloatface, and it lets..."
+  },
+  {
+    "title": "The Antidesktop (2002)",
+    "imageUrl": "http://web.archive.org/web/20021201230839im_/http://images.freshmeat.net/editorials/antidesktop/antidesktop-03-thumbnail.png",
+    "text": "freshmeat maintains the Web's largest index of Unix and cross-platform open source software. Thousands of applications are meticulously cataloged in the freshmeat database, and links to new code are added daily."
+  },
+  {
+    "title": "Epoll is broken – part 2/2",
+    "imageUrl": "https://drinknewyorkseltzer.com/wp-content/uploads/2014/04/placeholder1.png",
+    "text": "In this post we'll discuss the second argument on why the epoll()\nis broken. The problem is best described in an LWN comment by Foom:"
+  },
+  {
+    "title": "Whiteboard problems in pure Lambda Calculus",
+    "imageUrl": "https://drinknewyorkseltzer.com/wp-content/uploads/2014/04/placeholder1.png",
+    "text": "My team at Vivint, the\nSpace Monkey group, stopped doing\nwhiteboard interviews a while ago. We certainly used to do them, but\nwe’ve transitioned to homework problems or actually just hiring a candidate as\na short term contractor for a day or two to solve real work problems and see\nhow that goes. Whiteboard interviews are kind of like\nFestivus but in a bad way: you get\nthe feats of strength and then the airing of grievances. Unfortunately, modern\nprogramming is nothing like writing code in front of a roomful of strangers\nwith only a whiteboard and a marker, so it’s probably not best to optimize for\nthat."
+  },
+  {
+    "title": "YC AI",
+    "imageUrl": "http://blog.ycombinator.com/wp-content/uploads/2017/03/yc-ai.png",
+    "text": "In an effort to usher in more innovation with AI, Y Combinator is going to try an experiment in the upcoming batch: a vertical group in YC dedicated to AI companies. If you’re starting an AI company, we want to help you succeed. Apply here and mention this post in your application. "
+  },
+  {
+    "title": "Hash indexes are faster than btree indexes?",
+    "imageUrl": "https://3.bp.blogspot.com/-AhPV1hkZBds/WMv1d_yqvBI/AAAAAAAABH0/Aua4biHzorslMlY4gZS9cW4UwqX-oqUCACLcB/w1200-h630-p-k-no-nu/read_only_hash_index.png",
+    "text": "  PostgreSQL supports Hash Index from a long time, but they are not much used in production mainly because they are not durable.  Now, with ..."
+  },
+  {
+    "title": "Gabe Rivera and Techmeme",
+    "imageUrl": "https://img.buzzfeed.com/buzzfeed-static/static/2017-03/20/16/campaign_images/buzzfeed-prod-fastlane-01/meet-the-man-whose-site-mark-zuckerberg-reads-eve-2-29767-1490042277-2_dblbig.jpg",
+    "text": "For the last decade, Gabe Rivera has been quietly shaping the tech industry’s story for its top executives, investors, and journalists. But..."
+  },
+  {
+    "title": "GitLab 8.17.4, 8.16.8, and 8.15.8 Released",
+    "imageUrl": "https://about.gitlab.com/images/blogimages/gitlab-blog-cover.png",
+    "text": "Code, test &amp; deploy with GitLab. Everyone can contribute!"
+  },
+  {
+    "title": "Ask HN: Competitor is successful with black hat SEO",
+    "imageUrl": "https://news.ycombinator.com/y18.gif",
+    "text": "Contrary to seo consultants opinions we've ask (\"don't worry\") this (for all I know) works for them. They have now left us quite behind in rankings. As we are still not a known b2b marketplace brand and depend on seo this is hurting."
+  },
+  {
+    "title": "The D Garbage Collector",
+    "imageUrl": "http://dlang.org/blog/wp-content/uploads/2016/08/d6.png",
+    "text": "D, like many other programming languages in active use today, comes with a garbage collector out of the box. There are many types of software that can be written without worrying at all about the G…"
+  },
+  {
+    "title": "Immersive Linear Algebra – textbook with fully interactive figures (2015)",
+    "imageUrl": "https://drinknewyorkseltzer.com/wp-content/uploads/2014/04/placeholder1.png",
+    "text": "by J. Ström, K. Åström, and T. Akenine-Möller\n           \n            v0.82. ISBN: 978-91-637-9354-7 \n           \n        "
+  },
+  {
+    "title": "The Intel Edison: Linux Maker Machine in a Matchbox",
+    "imageUrl": "https://www.linux.com/sites/lcom/files/edison_0.jpg",
+    "text": "The Intel Edison is a physically tiny computer that draws a small amount of power and breaks out plenty of connections to allow it to interact with other electronics. It begs to be the brain of your next electronics tinkering project, with all the basics in a tiny package and an easy way to connect other things you might need."
+  },
+  {
+    "title": "I've decided to move on to Distill",
+    "imageUrl": "http://colah.github.io/images/post-covers/deconv.png",
+    "text": "I do not plan to write more of my deep learning articles on this site.  Instead, I will be co-editor of Distill, a visual, interactive journal for machine learning research emphasizing human understanding. I believe this will allow me to better serve the community."
+  },
+  {
+    "title": "What makes gambling wrong but insurance right?",
+    "imageUrl": "http://ichef.bbci.co.uk/news/1024/cpsprodpb/9289/production/_95031573_gettyimages-185275287.jpg",
+    "text": "Gamblers and insurers both place bets on the future, so how do they compare?"
+  },
+  {
+    "title": "SimplCommerce: Simple, cross-platform, modularized ecommerce system on .NET Core",
+    "imageUrl": "https://avatars1.githubusercontent.com/u/19270027?v=3&s=400",
+    "text": "SimplCommerce - A super simple, cross platform, modularized ecommerce system built on .NET Core"
+  }
+]

@@ -2,7 +2,11 @@ Description
 ============
 A collection of experiments that I am using to learn more about React.js.
 
-###I. `learning-react`
+### I. `article-lists-infinite-comments`
+[Demo](http://onora.github.io/reactJS-projects/article-lists-infinite-comments/public/)
+
+### II. `learning-react`
+
 React basics snippets created while I was reading books and posts and watching tutorials.
 - [drag and drop component](http://onora.github.io/reactJS-projects/learning-react/DnD-components/public/) (_DnD-components folder_)
 - [demo using react addons - clone element ](http://onora.github.io/reactJS-projects/learning-react/add-ons-snippets/dist/) (_add-ons-snippets folder_)
@@ -20,7 +24,7 @@ React basics snippets created while I was reading books and posts and watching t
 - [REDUX example - air cheap](https://github.com/oNora/reactJS-projects/tree/master/learning-react/air-cheap-redux) (_air-cheap-redux folder_)
 - [REDUX example - bank account](https://github.com/oNora/reactJS-projects/tree/master/learning-react/bank-account-redux) (_bank-account-redux folder_)
 
-###II. `reactJS-fundamentals`
+### III. `reactJS-fundamentals`
 
 ####Basics examples created during [React.js Fundamentals](http://courses.reactjsprogram.com/courses/reactjsfundamentals) course
 
@@ -29,5 +33,5 @@ React basics snippets created while I was reading books and posts and watching t
 2. `github-battel` - full example with routing, component, separating business logic from presentation logic, best practice and etc. ([Demo](http://onora.github.io/reactJS-projects/reactJS-fundamentals/github-battel/dist/))
 
 
-###III `shared-bookmarks`
+### IV `shared-bookmarks`
 [Demo](http://onora.github.io/reactJS-projects/shared-bookmarks/build/) with React and Redux
