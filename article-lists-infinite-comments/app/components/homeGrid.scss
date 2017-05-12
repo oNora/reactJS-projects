@@ -1,0 +1,89 @@
+.app-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px 0;
+    height: 100vh;
+    box-sizing: border-box;
+
+    >* {
+        box-sizing: border-box;
+    }
+
+    .side-bar {
+        flex-basis: 550px;
+    }
+
+    .content-panel {
+         flex-basis: calc(100% - 450px);
+    }
+}
+
+.gitHub-link{
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: 99;
+}
+
+// aside nav
+.articles-nav-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+
+    &.active {
+        background: #c9d3c4;
+    }
+
+    .article-img {
+        flex-basis: 30%;
+
+        img {
+            width:100%;
+        }
+    }
+
+    .article-details {
+        flex-basis: 65%;
+    }
+}
+
+.btn-load-next {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+//change default and add custom styles of scrollbar
+.scrollbar-panel {
+    height: calc(100vh - 20px) !important; //fix for safari
+
+    .inner-scrollbar-panel {
+        padding-right: 30px;
+    }
+
+    .track-vertical {
+        position: absolute;
+        width: 6px;
+        right: 10px;
+        bottom: 2px;
+        top: 2px;
+        border-radius: 3px;
+        z-index: 10;
+    }
+
+    .track-thumb-vertical {
+        background: #dedede;
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,40 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, em, img,
+strong, sub, sup, b, ol, ul, li, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, footer, header, menu, nav, section,video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.link-style {
+    color: #085394;
+    text-decoration: underline;
+}
+
+.title {
+    padding: 5px 0 15px;
+    text-align: center;
+    font-size: 30px;
+}

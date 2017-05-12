@@ -1,0 +1,54 @@
+.comment-wrap {
+
+    .comment-wrap {
+        margin-left: 40px;
+    }
+
+    .comment {
+        margin: 25px 0;
+    }
+
+    .comment-details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        > span {
+            &:first-of-type{
+                flex-basis: 65%;
+            }
+
+            flex-basis: 15%;
+            display: block;
+        }
+    }
+
+    button {
+        border: 0;
+        background: none;
+        cursor: pointer;
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
+            border: 0;
+            outline: none;
+        }
+    }
+}
+
+// toggle replies
+.toggle-show {
+    .comment-wrap {
+        display: block;
+    }
+}
+
+.toggle-hide {
+    .comment-wrap {
+        display: none;
+    }
+}
