@@ -8,6 +8,7 @@ const logger = (store) => (next) => (action) => {
 
 const bankStore = createStore(
     bankReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
     applyMiddleware(logger) // enhance the store with the logger middleware
 );
 
