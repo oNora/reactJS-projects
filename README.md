@@ -26,7 +26,7 @@ React basics snippets created while I was reading books and posts and watching t
 
 ### III. `react-mqtt`
 In this app I am playing with mqtt. <br />
-Read more [here](https://github.com/oNora/reactJS-projects/blob/master/react-mqtt/README.md) <br />
+Read more [here](https://github.com/oNora/reactJS-projects/blob/master/react-mqtt/readme.md) <br />
 Demo link [here](http://onora.github.io/reactJS-projects/react-mqtt/build/)
 
 ### IV. `reactJS-fundamentals`
