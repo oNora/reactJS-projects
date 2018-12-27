@@ -1,0 +1,5 @@
+export const SUBSCRIPTION_SUCCESS = "Connected to MQTT broker"
+export const DISCONNECT = "MQTT_DISCONNECT"
+export const RECONNECT = "MQTT trying reconnect"
+export const SUBSCRIPTION_ERROR = "MQTT_ERROR"
+export const MQTT_OFFLINE = "MQTT_OFFLINE"
