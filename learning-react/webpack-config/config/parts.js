@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 exports.setupCSS = function(paths) {
   return {
     module: {
-      loaders: [
+      use: [
         {
           test: /\.css$/,
           loaders: ['style', 'css'],
@@ -50,12 +50,12 @@ exports.setFreeVariable = function(key, value) {
 }
 
 exports.extractBundle = function(options) {
-  const entry = {};
-  entry[options.name] = options.entries;
+  // const entry = {};
+  // entry[options.name] = options.entries;
 
   return {
     // Define an entry point needed for splitting.
-    entry: entry,
+    // entry: entry,
     plugins: [
       // Extract bundle and manifest files. Manifest is
       // needed for reliable caching.
@@ -82,11 +82,15 @@ exports.clean = function(path) {
 exports.extractCSS = function(paths) {
   return {
     module: {
-      loaders: [
+      rules: [
         // Extract CSS during build
         {
           test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style', 'css'),
+          // loader: ExtractTextPlugin.extract('style', 'css'),
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            loader: "css-loader",
+          }),
           include: paths
         }
       ]

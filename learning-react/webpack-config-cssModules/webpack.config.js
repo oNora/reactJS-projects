@@ -58,6 +58,8 @@ var config = {
         contentBase: "./public",
         //colors: true, // с добавянето на validate тук гърми грешка
         //  stats: { colors: true },
+        host: '0.0.0.0',
+        port: '8000',
         historyApiFallback: true,
         inline: true
     }

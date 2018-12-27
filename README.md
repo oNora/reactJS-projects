@@ -24,7 +24,12 @@ React basics snippets created while I was reading books and posts and watching t
 - [REDUX example - air cheap](https://github.com/oNora/reactJS-projects/tree/master/learning-react/air-cheap-redux) (_air-cheap-redux folder_)
 - [REDUX example - bank account](https://github.com/oNora/reactJS-projects/tree/master/learning-react/bank-account-redux) (_bank-account-redux folder_)
 
-### III. `reactJS-fundamentals`
+### III. `react-mqtt`
+In this app I am playing with mqtt. <br />
+Read more [here](https://github.com/oNora/reactJS-projects/blob/master/react-mqtt/readme.md) <br />
+Demo link [here](http://onora.github.io/reactJS-projects/react-mqtt/build/)
+
+### IV. `reactJS-fundamentals`
 
 ####Basics examples created during [React.js Fundamentals](http://courses.reactjsprogram.com/courses/reactjsfundamentals) course
 
@@ -33,5 +38,5 @@ React basics snippets created while I was reading books and posts and watching t
 2. `github-battel` - full example with routing, component, separating business logic from presentation logic, best practice and etc. ([Demo](http://onora.github.io/reactJS-projects/reactJS-fundamentals/github-battel/dist/))
 
 
-### IV `shared-bookmarks`
+### V `shared-bookmarks`
 [Demo](http://onora.github.io/reactJS-projects/shared-bookmarks/build/) with React and Redux

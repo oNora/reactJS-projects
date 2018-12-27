@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
-const validate = require('webpack-validator');
 const parts = require('./config/parts');
 const pkg = require('./package.json');
 
@@ -36,14 +35,22 @@ const common = {
     filename: '[name].[chunkhash].js'
   },
   module: {
-    loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: [{
+          loader: 'babel-loader',
+          options: { presets: ['es2015'] },
+        }],
+      },
+
     ]
   },
   // Important! Do not remove ''. If you do, imports without
   // an extension won't work anymore!
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['.js']
   },
   plugins: [
     new HtmlWebpackPlugin({   // automatically generate of a index.html
@@ -91,5 +98,4 @@ switch(process.env.npm_lifecycle_event) {
     );
 }
 
-
-module.exports = validate(config);
+module.exports  = config;
