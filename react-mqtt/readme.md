@@ -1,7 +1,8 @@
 ## React app with MQTT & REDUX:
 In this app I am playing with mqtt.
 
-This app is using connection to the [public mqtt broker](http://www.hivemq.com/demos/websocket-client/)
+This app is using connection to the [public mqtt broker](http://www.hivemq.com/demos/websocket-client/) <br />
+Demo link [here](http://onora.github.io/reactJS-projects/react-mqtt/build/) Go to the "Home page" of the app to play with the MQTT
 
 ## How to use app:
 
@@ -21,7 +22,7 @@ The app also listen for evens coming from the public broker. How to post message
     "id": "id-1",
     "name": "plug",
     "type": "switch",
-    "switchStatus": "on" // change this to see how UI changing
+    "switchStatus": "on"
 }
 </pre>
 
